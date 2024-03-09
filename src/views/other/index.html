@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home Page</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHeuKLF2ui89pR57U1W+BKt509IG9nqgE6oIVi49CSD9EC8t7CD4L81EtseEhV" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/app.css">
+</head>
+
+<body>
+
+	<header>
+		<h1>Home Page</h1>
+		<img src="./images/node.jpg" width="60%">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Mi Mercado Libre</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Productos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Vender</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Ayuda</a>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<input class="form-control me-2" type="search" placeholder="Buscar productos"
+							aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Buscar</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="container mt-5">
+			<h2 class="text-center">¡Bienvenido a Mi Mercado Libre!</h2>
+			<p class="lead text-center">Encuentra todo lo que necesitas, desde ropa y tecnología hasta artículos para el
+				hogar y mucho más.</p>
+			<div class="row mt-5">
+				<div class="col-md-4">
+					<div class="card">
+						<img src="imagen1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Título del producto 1</h5>
+							<p class="card-text">Descripción del producto 1</p>
+							<a href="#" class="btn btn-primary">Ver más</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="imagen2.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Título del producto 2</h5>
+							<p class="card-text">Descripción del producto 2</p>
+							<a href="#" class="btn btn-primary">Ver más</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="imagen3.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Título del producto 3</h5>
+							<p class="card-text">Descripción del producto 3</p>
+							<a href="#" class="btn btn-primary">Ver más</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>
