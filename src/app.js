@@ -4,7 +4,7 @@ const cookieParser = require('cookie-parser');
 const express = require('express');
 const logger = require('morgan');
 const path = require('path');
-const userLogs = require('./middlewares/userLogs') //Importa el middleware
+ const userLogs = require('./middlewares/userLogs') //Importa el middleware
 
 // ************ express() - (don't touch) ************
 const app = express();
@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(cookieParser());
-app.use(userLogs) //Define  userLogs como middleware global//
+app.use(userLogs()) //Define  userLogs como middleware global//
 // ************ Template Engine - (don't touch) ************
 app.set('view engine', 'ejs');
 app.set('views', './src/views'); // Seteo de la ubicación de la carpeta "views"
@@ -24,9 +24,17 @@ app.set('views', './src/views'); // Seteo de la ubicación de la carpeta "views"
 
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************
-const mainRouter = require('./routes/main');
-app.use('/', mainRouter);
+const otherRouter = require('./routes/other.routes');
+const adminRouter = require ('./routes/admin.routes');
+const productsRouter = require('./routes/products.routes')
+const authRouter = require('./routes/authentication.routes')
 
+
+//******************Enrutadores************************* */
+app.use('/', otherRouter);
+/*app.use ('/admin' , adminRouter);
+app.use ('/productos',productsRouter);
+app.use('/autenticacion',authRouter)*/
 
 
 // ************ DON'T TOUCH FROM HERE ************
