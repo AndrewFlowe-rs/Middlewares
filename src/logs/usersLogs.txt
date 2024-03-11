@@ -1,2 +1,5 @@
 El usuario ingreso a la ruta /admin/crear-producto
 El usuario ingreso a la ruta /
+El usuario ingreso a la ruta /admin?user=Ada
+El usuario ingreso a la ruta /admin?user=Ada
+El usuario ingreso a la ruta /admin?user=Leticia

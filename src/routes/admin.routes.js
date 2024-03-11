@@ -1,8 +1,7 @@
-/*const express = require("express");
-const { create, edit, list } = require("../controllers/admin");
+const express = require("express");
 const router = express.Router();
+const checkAdmin = require("../middlewares/checkAdmin");
+const { admin } = require("../controllers/admin");
 
-// Desde el app llega /admin
-router.get('/',list)
-/*router.get ('/crear', create);
-router.get('/editar', edit)*/
+router.get ('/admin' , checkAdmin , admin);
+module.exports = router

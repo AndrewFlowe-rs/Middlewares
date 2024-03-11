@@ -1,13 +1,11 @@
-// const express= require ('express')
-// const router = express.Router()
-// const fs = require("fs");
-// const path = require("path");
-// const loadData = require('../data/index')
+const { loadData } = require("../data")
 
-
-const checkUser = (req, res, next) => {
-    const readUsers = loadData("usser");
-    const user = []
+module.exports =(req,res,next)=> {
+const data = loadData();
+const user = req.query.user
+const admin = data.find(p => p.user === user && p.rol === "Admin" )
+if(admin) {
+    return next()
 }
-
-module.exports = checkUser 
+res.send ('no tiene los privilegios para ingresar')
+}

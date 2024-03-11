@@ -25,14 +25,14 @@ app.set('views', './src/views'); // Seteo de la ubicación de la carpeta "views"
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************
 const otherRouter = require('./routes/other.routes');
-//const adminRouter = require ('./routes/admin.routes');
+const adminRouter = require ('./routes/admin.routes');
 /*const productsRouter = require('./routes/products.routes')
 const authRouter = require('./routes/authentication.routes')*//*
 
 
 //******************Enrutadores************************* */
 app.use('/', otherRouter);
-//app.use ('/' , adminRouter);
+app.use ('/' , adminRouter);
 /*app.use ('/productos',productsRouter);
 app.use('/autenticacion',authRouter)*/
 

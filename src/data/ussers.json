@@ -1,22 +1,22 @@
 [
     {
-        "usser": "Ada",
+        "user": "Ada",
         "rol": "Admin"
     },
     {
-        "usser": "Greta",
+        "user": "Greta",
         "rol": "Admin"
     },
     {
-        "usser" : "vin" ,
+        "user" : "vin" ,
         "rol" : "Admin"
     },
     {
-        "usser" : "Ricardina" ,
+        "user" : "Ricardina" ,
         "rol" : "Regular"
     },
     {
-        "usser": "Leticia",
+        "user": "Leticia",
         "rol": "Regular"
     }
 ]
