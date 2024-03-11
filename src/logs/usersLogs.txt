@@ -1,3 +1,2 @@
-El usuario entro a la ruta /
-El usuario entro a la ruta /
+El usuario ingreso a la ruta /admin/crear-producto
 El usuario ingreso a la ruta /
