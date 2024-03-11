@@ -1,0 +1,22 @@
+[
+    {
+        "usser": "Ada",
+        "rol": "Admin"
+    },
+    {
+        "usser": "Greta",
+        "rol": "Admin"
+    },
+    {
+        "usser" : "vin" ,
+        "rol" : "Admin"
+    },
+    {
+        "usser" : "Ricardina" ,
+        "rol" : "Regular"
+    },
+    {
+        "usser": "Leticia",
+        "rol": "Regular"
+    }
+]
